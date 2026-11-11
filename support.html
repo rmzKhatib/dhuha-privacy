@@ -1,0 +1,297 @@
+<!doctype html>
+<!--
+  Support page, served by GitHub Pages from the same public repo as the
+  privacy policy. Self-contained on purpose: no theme, no fonts, no scripts,
+  nothing to fetch — same as index.html, so the two pages read as one site.
+
+  This is the Support URL given to both stores. Apple checks that it resolves
+  and that it actually offers support, so keep the answers below real.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dhuha — Support</title>
+    <meta
+      name="description"
+      content="Support for Dhuha, a prayer-time and calendar app. Common questions about prayer times, Hijri dates, calendars and notifications, and how to get in touch."
+    />
+    <style>
+      /* Mirrors theme/colors.ts — vanilla sunrise, midnight dark. */
+      :root {
+        --bg: #fdfaf5;
+        --text: #3a322a;
+        --muted: #7c7065;
+        --border: #e7dccb;
+        --subtle: #f6efe4;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #15131c;
+          --text: #e9e4dc;
+          --muted: #9b93a6;
+          --border: #2d2938;
+          --subtle: #1b1925;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 48px 24px 96px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter,
+          Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin: 0 0 8px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        margin: 48px 0 12px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+      }
+
+      h3 {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 28px 0 8px;
+      }
+
+      p,
+      li {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .updated {
+        color: var(--muted);
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+
+      .lede {
+        font-size: 17px;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      code {
+        background: var(--subtle);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 1px 5px;
+        font-size: 0.9em;
+      }
+
+      .contact {
+        background: var(--subtle);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 20px 24px;
+        margin: 24px 0 0;
+      }
+
+      .contact p:last-child {
+        margin-bottom: 0;
+      }
+
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Dhuha Support</h1>
+      <p class="updated">Last updated: 11 November 2026</p>
+
+      <p class="lede">
+        Dhuha shows the calendars already on your phone against the five daily
+        prayers, so you can see where your week collides with a prayer before
+        you commit to anything. If something is not behaving, the answers below
+        cover the questions that come up most. If none of them helps, write to
+        us — a real person reads it.
+      </p>
+
+      <div class="contact">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:dhuha.contact@gmail.com">dhuha.contact@gmail.com</a>
+        </p>
+        <p>
+          We aim to reply within a few days. To get a useful answer first time,
+          please include your device and OS version, the app version from
+          <strong>Settings</strong>, and — if it is about prayer times — your
+          city and the calculation method you have selected.
+        </p>
+      </div>
+
+      <h2>Prayer times</h2>
+
+      <h3>The times do not match my masjid</h3>
+      <p>
+        Almost always the calculation method. Open <strong>Settings</strong> and
+        check, in this order:
+      </p>
+      <ul>
+        <li>
+          <strong>Calculation method</strong> — ISNA, Muslim World League, Umm
+          al-Qura, Egyptian, Karachi, Moonsighting Committee and others are
+          available. Masjids in the same city often differ here.
+        </li>
+        <li>
+          <strong>Asr madhab</strong> — Hanafi puts Asr noticeably later than
+          the standard calculation.
+        </li>
+        <li>
+          <strong>Per-prayer adjustments</strong> — if your masjid is still a
+          few minutes off after the above, nudge any individual prayer by the
+          minute until it matches.
+        </li>
+      </ul>
+
+      <h3>The app says today's times are approximate</h3>
+      <p>
+        At high latitudes the sun may never reach the angle a prayer time is
+        defined by, so there is no exact answer to calculate. Dhuha applies a
+        high-latitude rule and tells you rather than presenting a number as
+        certain. You can change which rule it uses in <strong>Settings</strong>;
+        this matters most in Canada, the UK and northern Europe in summer.
+      </p>
+
+      <h3>Friday shows Jumu'ah instead of Dhuhr</h3>
+      <p>
+        That is intended. You can set how many minutes after Dhuhr your masjid
+        begins the khutbah, and Dhuha will flag Friday events that clash with
+        it. Jumu'ah can be switched off in <strong>Settings</strong>.
+      </p>
+
+      <h2>Hijri dates and Islamic events</h2>
+      <p>
+        Dates come from the Umm al-Qura calendar and are calculated on your
+        device. Local moonsighting can move an event by a day in either
+        direction, which is what the <strong>Hijri offset</strong> setting is
+        for — it shifts every Hijri date and event by up to two days, with a
+        live preview of today's date so you can see the effect before you
+        commit.
+      </p>
+
+      <h2>Calendars</h2>
+
+      <h3>My events are not showing</h3>
+      <ul>
+        <li>
+          Check calendar access was granted. If you declined, Dhuha still works
+          for prayer times, Hijri dates and Islamic events, and shows a banner
+          offering to enable access.
+        </li>
+        <li>
+          Check <strong>Settings → Visible calendars</strong>. If you picked a
+          subset during onboarding, anything outside it is hidden.
+        </li>
+      </ul>
+
+      <h3>Editing a repeating event</h3>
+      <p>
+        When you move, edit or delete one occurrence of a repeating event,
+        Dhuha asks how far the change should reach before writing anything. The
+        options differ by platform because the platforms differ: on iPhone you
+        can change this event only, or this and all later events; on Android you
+        can change this event only, or every event in the series. Android's
+        calendar system has no way to change only later occurrences, so the app
+        says what it will actually do rather than offering a choice it cannot
+        honour.
+      </p>
+
+      <h3>What is the "Fasting" calendar?</h3>
+      <p>
+        If you switch on the voluntary fasting reminders — the white days, or
+        Mondays and Thursdays — Dhuha creates a calendar of its own on your
+        device and fills it with those days. It is never written into a calendar
+        you own, and turning the reminders off deletes it. Prayer times
+        themselves are only drawn inside the app and are never copied into a
+        device calendar.
+      </p>
+
+      <h2>Notifications</h2>
+      <ul>
+        <li>
+          Notifications are off by default and are enabled per prayer in
+          <strong>Settings</strong>.
+        </li>
+        <li>
+          They are scheduled a few days ahead and topped up each time you open
+          the app, which is a limit the phone imposes rather than a choice. If
+          you do not open Dhuha for more than about five days, scheduled alerts
+          will run out until you do.
+        </li>
+        <li>
+          On Android, prayer alerts need permission to fire at an exact time.
+          If they arrive late or not at all, check that exact alarms are allowed
+          for Dhuha in your system settings.
+        </li>
+      </ul>
+
+      <h2>Privacy</h2>
+      <p>
+        There is no account, no analytics and no server. Your calendar and your
+        location stay on your phone, and the app works fully offline. The full
+        policy is at
+        <a href="./">the privacy policy page</a>.
+      </p>
+
+      <h2>Reporting a problem</h2>
+      <p>
+        Bug reports are welcome and genuinely useful. The most helpful ones say
+        what you expected, what happened instead, and the steps to see it again.
+        Screenshots help. Send them to
+        <a href="mailto:dhuha.contact@gmail.com">dhuha.contact@gmail.com</a>.
+      </p>
+
+      <footer>
+        Dhuha — prayer times and your calendar, on your device.
+      </footer>
+    </main>
+  </body>
+</html>
