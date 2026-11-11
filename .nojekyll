@@ -1,0 +1,2 @@
+Serve this folder as plain static files. index.html is self-contained and
+needs no Jekyll processing, theme or build step.
